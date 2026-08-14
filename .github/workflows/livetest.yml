@@ -1,0 +1,11 @@
+name: livetest-slow
+on: [pull_request]
+
+jobs:
+  livetest-slow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Take a while, then report
+        run: |
+          sleep 60
+          exit 0
