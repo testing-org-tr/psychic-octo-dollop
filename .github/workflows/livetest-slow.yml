@@ -1,0 +1,9 @@
+name: livetest-slow
+on: [pull_request]
+
+jobs:
+  livetest-slow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report after a delay
+        run: sleep 120
